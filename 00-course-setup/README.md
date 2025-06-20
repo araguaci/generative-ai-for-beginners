@@ -40,7 +40,7 @@ Here's a step-by-step guide on how to create a `.env` file for Python and add th
 
    Windows:
    ```cmd
-   echo. > .env
+   echo . > .env
    ```
 
 3. **Edit the `.env` File**: Open the `.env` file in a text editor (e.g., VS Code, Notepad++, or any other editor). Add the following line to the file, replacing `your_github_token_here` with your actual GitHub token:
@@ -87,7 +87,9 @@ cd generative-ai-for-beginners
 
 Once you have everything checked out, you can get started!
 
-### Installing Miniconda (optional step)
+## Optional Steps 
+
+### Installing Miniconda 
 
 [Miniconda](https://conda.io/en/latest/miniconda.html?WT.mc_id=academic-105485-koreyst) is a lightweight installer for installing [Conda](https://docs.conda.io/en/latest?WT.mc_id=academic-105485-koreyst), Python, as well as a few packages.
 Conda itself is a package manager, that makes it easy to setup and switch between different Python [**virtual environments**](https://docs.python.org/3/tutorial/venv.html?WT.mc_id=academic-105485-koreyst) and packages. It also comes in handy for installing packages that are not available via `pip`.
