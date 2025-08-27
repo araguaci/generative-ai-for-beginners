@@ -16,22 +16,34 @@ To start taking this course, you will need to complete the following steps.
 
 To avoid any dependency issues when running the code, we recommend running this course in a [GitHub Codespaces](https://github.com/features/codespaces?WT.mc_id=academic-105485-koreyst).
 
-This can be created by selecting the `Code` option on your forked version of this repo and selecting the **Codespaces** option.
+In your fork: **Code -> Codespaces -> New on main**
 
 ![Dialog showing buttons to create a codespace](./images/who-will-pay.webp?WT.mc_id=academic-105485-koreyst)
 
-### 3. Storing Your API Keys
+#### 2.1 Add a secret
 
-Keeping your API keys safe and secure is important when building any type of application. We recommend not to store any API keys directly in your code. Committing those details to a public repository could result in security issues and even unwanted costs if used by a bad actor.
-Here's a step-by-step guide on how to create a `.env` file for Python and add the `GITHUB_TOKEN`:
+1. ⚙️ Gear icon -> Command Pallete-> Codespaces : Manage user secret -> Add a new secret.
+2. Name OPENAI_API_KEY, paste your key, Save.
 
-1. **Navigate to Your Project Directory**: Open your terminal or command prompt and navigate to your project's root directory where you want to create the `.env` file.
+### 3.  What’s next?
 
-   ```bash
-   cd path/to/your/project
-   ```
+| I want to…          | Go to…                                                                  |
+|---------------------|-------------------------------------------------------------------------|
+| Start Lesson 1      | [`01-introduction-to-genai`](../01-introduction-to-genai/README.md)     |
+| Work offline        | [`setup-local.md`](02-setup-local.md)                                   |
+| Setup an LLM Provider | [`providers.md`](providers.md)                                        |
+| Meet other learners | [Join our Discord](https://aka.ms/genai-discord?WT.mc_id=academic-105485-koreyst)   |
 
-2. **Create the `.env` File**: Use your preferred text editor to create a new file named `.env`. If you're using the command line, you can use `touch` (on Unix-based systems) or `echo` (on Windows):
+## Troubleshooting
+
+
+| Symptom                                   | Fix                                                             |
+|-------------------------------------------|-----------------------------------------------------------------|
+| Container build stuck > 10 min            | **Codespaces ➜ “Rebuild Container”**                            |
+| `python: command not found`               | Terminal didn’t attach; click **+** ➜ *bash*                    |
+| `401 Unauthorized` from OpenAI            | Wrong / expired `OPENAI_API_KEY`                                |
+| VS Code shows “Dev container mounting…”   | Refresh the browser tab—Codespaces sometimes loses connection   |
+| Notebook kernel missing                   | Notebook menu ➜ **Kernel ▸ Select Kernel ▸ Python 3**           |
 
    Unix-based systems:
 
@@ -171,6 +183,7 @@ An alternative to setting everything up on your computer or Codespace is to use 
 
 One of the best ways to keep your API keys secure when using GitHub Codespaces is by using Codespace Secrets. Please follow the [Codespaces secrets management](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-secrets-for-your-codespaces?WT.mc_id=academic-105485-koreyst) guide to learn more about this.
 
+
 ## Lessons and Technical Requirements
 
 The course has 6 concept lessons and 6 coding lessons.
@@ -212,3 +225,4 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 ## Let's Get Started
 
 Now that you have completed the needed steps to complete this course, let's get started by getting an [introduction to Generative AI and LLMs](../01-introduction-to-genai/README.md?WT.mc_id=academic-105485-koreyst).
+
